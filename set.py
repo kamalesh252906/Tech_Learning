@@ -11,21 +11,21 @@
 # Why does 110 not appear twice ?
 
 
-# rainfall_data = {120, 150, 180, 120, 90, 110, 130}
-# print(len(rainfall_data))
+rainfall_data = {120, 150, 180, 120, 90, 110, 130}
+print(len(rainfall_data))
 # No , we can't directly change the value of an item in a set.
-# rainfall_data[1] = 130
-# # 'set' object does not support item assignment
-# if 150 in rainfall_data:
-#     print('present')
-# else:
-#     print('not present')
-# lists = list(rainfall_data)
-# print(lists)
-# for i in rainfall_data:
-#     print(i)
-# rainfall_data.add(110)
-# print("After removing 120:", rainfall_data)
+rainfall_data[1] = 130
+# 'set' object does not support item assignment
+if 150 in rainfall_data:
+    print('present')
+else:
+    print('not present')
+lists = list(rainfall_data)
+print(lists)
+for i in rainfall_data:
+    print(i)
+rainfall_data.add(110)
+print("After removing 120:", rainfall_data)
 # It does not appear duplicate data
 
 # rainfall_chennai = {120, 140, 160, 180}
@@ -58,6 +58,19 @@ ctwo = rainfall_chennai & rainfall_madurai
 cetwo = rainfall_coimbatore & rainfall_madurai
 total = mtwo | ctwo | cetwo
 print(total)
+
+# 5
+min_value = min(rainfall_madurai) , min(rainfall_chennai)
+print(min_value)
+# 6
+increase = {x+10 for x in rainfall_chennai}
+print(increase)
+# 7
+rainfall_coimbatore = {100, 120, 180, 200}
+del rainfall_coimbatore
+# 8
+rainfall_chennai.clear()
+print(rainfall_chennai)
 
 
 
